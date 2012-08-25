@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>-moz-element Iframe Reflection</title>
+</head>
+<body>
+    <script type="text/javascript" charset="utf-8">
+        function setUsingProxy() {
+            proxy = document.getElementById('proxy');
+            proxy.style.display = 'block';
+            no_proxy = document.getElementById('no_proxy');
+            no_proxy.style.display = 'none';
+        }
+    </script>
+
+    <div id="name">
+        Works in: Firefox.<br />
+        In Firefox you can detect if users are using a proxy using image tags.<br /><br />
+    </div>
+
+    <div id="proxy" style="display:none;">
+        You are accessing the Internet through a proxy (corporate proxy, VPN, or <a href="http://www.torproject.org/">Tor</a>).
+    </div>
+
+    <div id="no_proxy">
+        You are accessing the Internet directly. No proxy.
+    </div>
+
+    <img src="http://[74.207.246.197]/organize.jpg" style="height:0;width:0;display:none;" onerror="setUsingProxy()">
+</body>
+</html>
