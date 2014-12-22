@@ -1,5 +1,7 @@
 # detect-proxy
 
+### This repo is unmaintained and this technique may not work anymore.
+
 By [Feross Aboukhadijeh](http://feross.org).
 
 This code allows a malicious website to **detect whether the user is browsing through a proxy or not** by using image tags. Proxies are often used by corporations, political dissidents, and privacy conscience Internet users because they can provide additional security or anonymous Internet browsing.
